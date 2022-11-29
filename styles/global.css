@@ -1,0 +1,28 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --special-font: 'FFF Forward', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: black;
+  font-family: var(--main-font);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: calc(100% - 60px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 799px) {
+  body {
+    font-size: 16px;
+  }
+}

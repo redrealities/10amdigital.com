@@ -1,0 +1,22 @@
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  font-family: var(--special-font);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 33px;
+  margin-bottom: 80px;
+}
+
+.section-header::before,
+.section-header::after {
+  content: url('../../images/pixel-corner-down.svg');
+}
+
+@media (max-width: 799px) {
+  .section-header {
+    font-size: 18px;
+  }
+}

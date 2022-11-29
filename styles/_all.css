@@ -1,0 +1,9 @@
+@import "fonts.css";
+@import "global.css";
+
+/* SECTIONS */
+@import "sections/header.css";
+@import "sections/section-header.css";
+@import "sections/project.css";
+@import "sections/footer.css";
+
