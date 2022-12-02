@@ -1,6 +1,7 @@
 :root {
   --main-font: 'Roboto', sans-serif;
   --special-font: 'FFF Forward', sans-serif;
+  --side-spacing: 60px;
 }
 
 html {
@@ -20,7 +21,7 @@ img {
 }
 
 .container {
-  width: calc(100% - 60px);
+  width: calc(100% - var(--side-spacing));
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -43,6 +44,10 @@ img {
 *:nth-child(15) { --nth-child-idx: 15; }
 
 @media (max-width: 799px) {
+  :root {
+    --side-spacing: 30px;
+  }
+
   body {
     font-size: 16px;
   }
