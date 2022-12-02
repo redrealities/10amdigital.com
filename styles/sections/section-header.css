@@ -8,6 +8,21 @@
   font-weight: normal;
   line-height: 33px;
   margin-bottom: 80px;
+
+  opacity: 0;
+  transform: translateY(1em);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition-delay: 2500ms;
+}
+
+.page--loaded .section-header {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-header__box {
+  color: inherit;
+  text-decoration: none;
 }
 
 .section-header::before,

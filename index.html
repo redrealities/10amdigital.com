@@ -10,11 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <link rel="icon" href="image/favicon-192.png" sizes="192x192" />
+    <link rel="shortcut icon" type=image/x-icon href=images/favicon-256.ico>
   </head>
   <body>
     <div class="wrapper">
       <header class="header container">
-        <h1 class="header__title">10am Digital</h1>
+        <h1 class="header__title letterise-tag">10am Digital</h1>
         <div class="header__info-box">
           <div class="header__contacts">
             <a class="header__email" href="mailto:alex@10amdigital.com">alex@10amdigital.com</a>
@@ -33,9 +36,11 @@
       </header>
 
       <section class="projects container">
-        <h2 class="section-header">Featured Projects</h2>
+        <a class="section-header__box" href="#featured" name="featured">
+          <h2 class="section-header">Featured Projects</h2>
+        </a>
         
-        <div class="project">
+        <div class="project visible-tag">
           <div class="project__meta-box">
             <div class="project__category">Project</div>
             <div class="project__meta">
@@ -52,7 +57,7 @@
           </a>
         </div>
 
-        <div class="project">
+        <div class="project visible-tag">
           <div class="project__meta-box">
             <div class="project__category">Project</div>
             <div class="project__meta">
@@ -69,7 +74,7 @@
           </a>
         </div>
 
-        <div class="project">
+        <div class="project visible-tag">
           <div class="project__meta-box">
             <div class="project__category">Project</div>
             <div class="project__meta">
@@ -86,7 +91,7 @@
           </a>
         </div>
 
-        <div class="project">
+        <div class="project visible-tag">
           <div class="project__meta-box">
             <div class="project__category">Project</div>
             <div class="project__meta">
@@ -105,7 +110,9 @@
       </section>
 
       <footer class="footer container">
-        <h2 class="section-header">Get In Touch</h2>
+        <a class="section-header__box" href="#contacts" name="contacts">
+          <h2 class="section-header">Get In Touch</h2>
+        </a>
 
         <div class="footer__contacts">
           <div class="footer__contact">
@@ -123,5 +130,9 @@
         </div>
       </footer>
     </div>
+
+    <script src="scripts/visible-tag.js"></script>
+    <script src="scripts/letterise-tag.js"></script>
+    <script src="scripts/general.js"></script>
   </body>
 </html>

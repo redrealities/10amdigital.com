@@ -1,6 +1,7 @@
 .footer {
   padding-bottom: 40px;
 }
+
 .footer__contacts {
   display: flex;
   flex-direction: column;
@@ -9,6 +10,15 @@
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 110px;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.footer__contacts {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .footer__contact {

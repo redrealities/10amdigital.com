@@ -16,11 +16,34 @@
   font-family: var(--special-font);
 }
 
+.header__title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(1em);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition-delay: calc(200ms + (var(--nth-child-idx) - 1) * 100ms);
+}
+
+.page--loaded .header__title span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .header__info-box {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+
+  opacity: 0;
+  transform: translateX(-1em);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition-delay: 1500ms;
+}
+
+.page--loaded .header__info-box {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .header__email {
@@ -46,6 +69,16 @@
 .header__experience {
   font-size: 24px;
   line-height: 28px;
+
+  opacity: 0;
+  transform: translateX(1em);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition-delay: 2000ms;
+}
+
+.page--loaded .header__experience {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media (max-width: 799px) {
