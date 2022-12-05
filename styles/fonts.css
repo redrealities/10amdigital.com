@@ -2,3 +2,7 @@
   font-family: 'FFF Forward';
   src: url('../fonts/FFFForward.woff') format('woff');
 }
+
+a {
+  color: #666;
+}
