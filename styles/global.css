@@ -4,6 +4,10 @@
   --side-spacing: 60px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }

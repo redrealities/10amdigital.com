@@ -1,0 +1,12 @@
+.paragraph-text {
+  font-size: 32px;
+  color: #333;
+}
+
+.paragraph-text p:first-of-type {
+  margin-top: 0;
+}
+
+.paragraph-text p:last-of-type {
+  margin-bottom: 0;
+}

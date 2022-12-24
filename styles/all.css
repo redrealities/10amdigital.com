@@ -1,9 +1,22 @@
 @import "fonts.css";
 @import "global.css";
 
+/* COMPONENTS */
+@import "components/grid.css";
+@import "components/section.css";
+
+/* ELEMENTS */
+@import "elements/image-el.css";
+@import "elements/input.css";
+@import "elements/button.css";
+
 /* SECTIONS */
 @import "sections/header.css";
+@import "sections/small-header.css";
 @import "sections/section-header.css";
-@import "sections/project.css";
 @import "sections/footer.css";
+@import "sections/project.css";
+@import "sections/hero-media.css";
+@import "sections/paragraph-text.css";
+@import "sections/form-area.css";
 

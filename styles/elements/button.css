@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 368px; height: 51px;
+  max-width: 100%;
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.btn--uppercase {
+  text-transform: uppercase;
+}

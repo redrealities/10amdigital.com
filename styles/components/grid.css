@@ -1,0 +1,16 @@
+.grid {
+  --cols: 1fr;
+
+  display: grid;
+  grid-template-columns: var(--cols);
+}
+
+.grid > * {
+  min-width: 0;
+}
+
+@media (max-width: 799px) {
+  .grid {
+    --cols: 1 !important;
+  }
+}

@@ -13,6 +13,8 @@
   transform: translateY(1em);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   transition-delay: 2500ms;
+
+  color: black;
 }
 
 .page--loaded .section-header {

@@ -1,0 +1,11 @@
+.input {
+  box-sizing: border-box;
+  width: 368px; height: 51px;
+  max-width: 100%;
+  border: 1px solid #666;
+  padding: 0 20px;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
