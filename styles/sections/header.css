@@ -34,14 +34,17 @@
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+}
 
+.header__contacts {
   opacity: 0;
   transform: translateX(-1em);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   transition-delay: 1500ms;
 }
 
-.page--loaded .header__info-box {
+.page--loaded .header__contacts {
+  transition-delay: 1500ms;
   opacity: 1;
   transform: translateX(0);
 }

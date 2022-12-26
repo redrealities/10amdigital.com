@@ -1,0 +1,25 @@
+.anim__move-in {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.anim__move-in--right {
+  transform: translateX(20px);
+}
+
+.visible-tag--visible.anim__move-in,
+.visible-tag--visible .anim__move-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.anim__scaling-img:not(.anim__scaling-image--bare) {
+  overflow: hidden;
+  line-height: 0;
+}
+
+.anim__scaling-img img {
+  transition: transform 100ms linear;
+  transform: scale(calc(1 + 0.2 * var(--est-distance-mult, 0)));
+}
