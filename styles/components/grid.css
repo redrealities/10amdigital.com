@@ -5,6 +5,10 @@
   grid-template-columns: var(--cols);
 }
 
+.grid--spaced {
+  gap: 24px;
+}
+
 .grid > * {
   min-width: 0;
 }

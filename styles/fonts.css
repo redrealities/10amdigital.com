@@ -3,6 +3,15 @@
   src: url('../fonts/FFFForward.woff') format('woff');
 }
 
+:root {
+  color: black;
+}
+
+.text--content {
+  color: #111;
+  font-size: 24px;
+}
+
 a {
   color: #333;
 }

@@ -10,6 +10,7 @@
   color: white;
   border: 3px solid black;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn:hover {
