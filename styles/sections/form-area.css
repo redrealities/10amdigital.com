@@ -21,3 +21,10 @@
 .form-area__input {
   margin-bottom: 16px;
 }
+
+@media (max-width: 799px) {
+  .form-area {
+    padding: 20px;
+    gap: 15px;
+  }
+}

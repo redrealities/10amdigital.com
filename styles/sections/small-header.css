@@ -51,3 +51,14 @@
   background-color: currentColor;
 }
   
+@media (max-width: 799px) {
+  :root {
+    --header-height: 100px;
+  }
+
+  .small-header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}

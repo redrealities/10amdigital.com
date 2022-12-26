@@ -50,3 +50,9 @@
 .hero-media__title strong {
   color: white;
 }
+
+@media (max-width: 799px) {
+  .hero-media__title {
+    font-size: 36px;
+  }
+}

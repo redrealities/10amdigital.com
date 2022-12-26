@@ -12,5 +12,10 @@
 @media (max-width: 799px) {
   .grid {
     --cols: 1 !important;
+    row-gap: 20px;
+  }
+
+  .grid > *:empty {
+    display: none;
   }
 }

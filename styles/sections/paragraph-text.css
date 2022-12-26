@@ -10,3 +10,9 @@
 .paragraph-text p:last-of-type {
   margin-bottom: 0;
 }
+
+@media (max-width: 799px) {
+  .paragraph-text {
+    font-size: 24px;
+  }
+}
