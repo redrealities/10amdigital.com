@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate Hair Salon Marketing Cheat Sheet | 10am Digital &#8211; Web Design and Development Agency</title>
     <link rel="stylesheet" href="/vendor/normalize.min.css">
-    <link rel="stylesheet" href="/styles/all.css">
+    <link rel="stylesheet" href="/styles/combined.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
         <div class="hero-media__bg">
           <img class="hero-media__bg-image" src="/images/hero-hair-salon.jpg" alt="Successfull Hair Salon owner in front of their salon.">
         </div>
-        <div class="hero-media__content container">
+        <div class="hero-media__content container anim anim-load__move-up">
           <h1 class="hero-media__title">
             Get<br>
             <strong>The Ultimate Hair Salon Marketing Cheat Sheet</strong><br>
@@ -50,19 +50,21 @@
 
       <section class="paragraph-text section container">
         <a class="section-header__box" href="#download" name="download">
-          <h2 class="section-header">Download Cheat Sheet</h2>
+          <h2 class="section-header" style="transition-delay: 800ms;">Download Cheat Sheet</h2>
         </a>
 
-        <p>Are you struggling to attract new customers and keep them coming back to your hair salon? Our cheat sheet is here to help.</p>
+        <div class="visible-tag anim-visible__move-in-up">
+          <p>Are you struggling to attract new customers and keep them coming back to your hair salon? Our cheat sheet is here to help.</p>
 
-        <p>Filled with proven strategies and tactics for growing your salon and attracting new business, our cheat sheet covers everything from optimising your website for search engines to using social media to connect with customers.</p>
+          <p>Filled with proven strategies and tactics for growing your salon and attracting new business, our cheat sheet covers everything from optimising your website for search engines to using social media to connect with customers.</p>
 
-        <p>But don't just take our word for it – enter your email below to download the cheat sheet and see for yourself how it can benefit your salon.</p>
+          <p>But don't just take our word for it – enter your email below to download the cheat sheet and see for yourself how it can benefit your salon.</p>
+        </div>
       </section>
 
       <section class="form-area grid section container" style="--cols: 1fr 4fr 1fr 5fr 1fr;">
         <div></div>
-        <form class="form-area__form serverless_mailer" data-success-msg="Please check your email" data-fail-msg="Something went wrong, please try again later">
+        <form class="form-area__form serverless_mailer visible-tag anim-visible__move-in-left" data-success-msg="Please check your email" data-fail-msg="Something went wrong, please try again later">
           <input type="hidden" name="subject" value="Hair Salon Cheat Sheet request">
           <input type="hidden" name="autorespond" value="https://10amdigital.com/upload/autorespond.ini">
 
@@ -71,7 +73,7 @@
           <button class="btn btn--uppercase" type="submit">Send Me The Cheat Sheet</button>
         </form>
         <div></div>
-        <div class="form-area__image-box">
+        <div class="form-area__image-box visible-tag anim-visible__move-in-right distance-estimator anim__scaling-img">
           <img class="form-area__image" src="/images/owner-with-cheat-sheet.jpg" alt="Hair Salon owner with the Cheat Sheet">
         </div>
       </section>
@@ -81,12 +83,12 @@
       </section>
       
       <section class="paragraph-text grid section container" style="--cols: 6fr 1fr 5fr;">
-        <div>
+        <div class="visible-tag">
           <p>With the help of our cheat sheet, you can turn your salon into a thriving business.<p>
           <p>Start attracting new customers and keeping them coming back with the Ultimate Hair Salon Marketing Cheat Sheet.</p>
         </div>
         <div></div>
-        <div class="image-el__box">
+        <div class="image-el__box distance-estimator anim__scaling-img">
           <img class="image-el__image" src="/images/happy-salon-owner.jpg" alt="Happy Hair Salon owner">
         </div>
       </section>

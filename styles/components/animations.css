@@ -1,17 +1,37 @@
-.anim__move-in {
-  opacity: 0;
-  transform: translateX(-20px);
+.anim {
   transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
 }
 
-.anim__move-in--right {
+.anim-visible__move-in-up,
+.anim-visible__move-in-down,
+.anim-visible__move-in-left,
+.anim-visible__move-in-right {
+  opacity: 0;
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.anim-visible__move-in-up {
+  transform: translateY(20px);
+}
+
+.anim-visible__move-in-down {
+  transform: translateY(-20px);
+}
+
+.anim-visible__move-in-left {
+  transform: translateX(-20px);
+}
+
+.anim-visible__move-in-right {
   transform: translateX(20px);
 }
 
-.visible-tag--visible.anim__move-in,
-.visible-tag--visible .anim__move-in {
+.visible-tag--visible.anim-visible__move-in-up, .visible-tag--visible .anim-visible__move-in-up,
+.visible-tag--visible.anim-visible__move-in-down, .visible-tag--visible .anim-visible__move-in-down,
+.visible-tag--visible.anim-visible__move-in-left, .visible-tag--visible .anim-visible__move-in-left,
+.visible-tag--visible.anim-visible__move-in-right, .visible-tag--visible .anim-visible__move-in-right {
   opacity: 1;
-  transform: translateX(0);
+  transform: translate(0);
 }
 
 .anim__scaling-img:not(.anim__scaling-image--bare) {
@@ -22,4 +42,15 @@
 .anim__scaling-img img {
   transition: transform 100ms linear;
   transform: scale(calc(1 + 0.2 * var(--est-distance-mult, 0)));
+}
+
+.anim-load__move-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-delay: 200ms;
+}
+
+.page--loaded .anim-load__move-up {
+  opacity: 1;
+  transform: translateY(0);
 }

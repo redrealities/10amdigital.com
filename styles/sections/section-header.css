@@ -12,7 +12,6 @@
   opacity: 0;
   transform: translateY(1em);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
-  transition-delay: 2500ms;
 
   color: black;
 }
@@ -29,7 +28,7 @@
 
 .section-header::before,
 .section-header::after {
-  content: url('../../images/pixel-corner-down.svg');
+  content: url(../../images/pixel-corner-down.svg);
 }
 
 @media (max-width: 799px) {

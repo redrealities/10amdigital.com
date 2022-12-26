@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'FFF Forward';
-  src: url('../fonts/FFFForward.woff') format('woff');
+  src: url(../fonts/FFFForward.woff) format('woff');
 }
 
 :root {
