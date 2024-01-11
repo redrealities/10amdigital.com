@@ -4,6 +4,17 @@
   padding-bottom: 40px;
 }
 
+.footer__form {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.footer .gform_button {
+  margin: 0 auto !important;
+  background-color: black !important;
+  text-transform: uppercase !important;
+}
+
 .footer__contacts {
   display: flex;
   flex-direction: column;

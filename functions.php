@@ -1,7 +1,7 @@
 <?php
 define('THEME_SLUG', '10am-theme');
 define('THEME_VERSION', '1.0.0');
-define('THEME_IN_DEV', false);
+define('THEME_IN_DEV', true);
 
 add_theme_support('post-thumbnails');
 
@@ -29,7 +29,7 @@ add_action( 'wp_enqueue_scripts', function() {
 
 add_action('enqueue_block_editor_assets', function() {
 	$version = filemtime(get_template_directory() . '/styles/all.css');
-	wp_enqueue_style('regular-styles', get_template_directory_uri() . '/styles/combined.css', [], $version);
+	wp_enqueue_style('regular-theme-styles', get_stylesheet_directory_uri() . '/styles/all.css', [], $version);
 });
 
 remove_action('wp_head', 'print_emoji_detection_script', 7); 
