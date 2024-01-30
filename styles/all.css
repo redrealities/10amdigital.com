@@ -21,4 +21,7 @@
 @import 'sections/paragraph-text.css';
 @import 'sections/form-area.css';
 @import 'sections/separator-line.css';
+@import 'sections/cards--services.css';
+@import 'sections/cards--logos.css';
+@import 'sections/cards--packages.css';
 

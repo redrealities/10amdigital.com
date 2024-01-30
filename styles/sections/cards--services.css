@@ -1,0 +1,17 @@
+.cards--services {
+  row-gap: 40px;
+}
+
+.cards--services ._10am-cards__item {
+  text-align: center;
+}
+
+.cards--services ._10am-cards__item-img {
+  width: 50px; height: 50px;
+}
+
+@media (max-width: 1023px) {
+  .cards--services {
+    grid-template-columns: 1fr 1fr;
+  }
+}

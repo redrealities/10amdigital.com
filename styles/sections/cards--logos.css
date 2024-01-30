@@ -1,0 +1,19 @@
+.cards--logos {
+  column-gap: 60px;
+}
+
+.cards--logos ._10am-cards__item-title {
+  display: none;
+}
+
+.cards--logos ._10am-cards__item-img {
+  height: 100px;
+  object-fit: contain;
+}
+
+@media (max-width: 1023px) {
+  .cards--logos {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+}
