@@ -1,5 +1,14 @@
 .header {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height, 70px);
+  gap: 15px;
+}
+
+._10am-header {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;

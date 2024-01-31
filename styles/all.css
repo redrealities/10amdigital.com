@@ -1,7 +1,9 @@
 @import 'fonts.css';
 @import 'global.css';
+@import 'typography.css';
 
 /* COMPONENTS */
+@import 'components/wp.css';
 @import 'components/grid.css';
 @import 'components/section.css';
 @import 'components/animations.css';
@@ -9,7 +11,7 @@
 /* ELEMENTS */
 @import 'elements/image-el.css';
 @import 'elements/input.css';
-@import 'elements/button.css';
+/*@import 'elements/button.css';*/
 
 /* SECTIONS */
 @import 'sections/header.css';

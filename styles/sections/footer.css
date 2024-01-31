@@ -1,4 +1,18 @@
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35px;
+  padding: var(--footer-padding, 20px 10px);
+  background-color: var(--footer-bg-color, #111);
+  color: var(--footer-text-color, white);
+}
+
+.footer a {
+  color: inherit !important;
+}
+
+._10am-footer {
   border-top: 4px solid black;
   margin-top: 35px;
   padding-bottom: 40px;

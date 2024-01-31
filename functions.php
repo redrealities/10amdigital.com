@@ -3,6 +3,8 @@ define('THEME_SLUG', '10am-theme');
 define('THEME_VERSION', '1.0.0');
 define('THEME_IN_DEV', true);
 
+require_once('includes/gravity-forms.php');
+
 add_theme_support('post-thumbnails');
 
 add_action('wp_head', function() {
@@ -21,9 +23,9 @@ gtag('config', 'G-Y7FC9FH99R');
 add_action( 'wp_enqueue_scripts', function() {
   wp_enqueue_style(THEME_SLUG . '-normalize-style', get_stylesheet_directory_uri() . '/vendor/normalize.min.css', array(), THEME_VERSION);
   if(THEME_IN_DEV) {
-    wp_enqueue_style(THEME_SLUG . '-style', get_stylesheet_directory_uri() . '/styles/all.css', array(), THEME_VERSION);
+    wp_enqueue_style('layer--10am-theme--'.THEME_SLUG . '-style', get_stylesheet_directory_uri() . '/styles/all.css', array(), THEME_VERSION);
   } else {
-    wp_enqueue_style(THEME_SLUG . '-style', get_stylesheet_directory_uri() . '/styles/combined-'.THEME_VERSION.'.css', array(), THEME_VERSION);
+    wp_enqueue_style('layer--10am-theme--'.THEME_SLUG . '-style', get_stylesheet_directory_uri() . '/styles/combined-'.THEME_VERSION.'.css', array(), THEME_VERSION);
   }
 }, 100);
 
