@@ -1,0 +1,27 @@
+.cards--packages ._10am-cards__item-img {
+  width: 50px; height: 50px;
+}
+
+.cards--packages ._10am-cards__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  padding: 0 25px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.cards--packages ._10am-cards__item-link:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1023px) {
+  .cards--packages {
+    font-size: 20px;
+  }
+}
