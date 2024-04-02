@@ -17,7 +17,7 @@
 
 .cards--packages ._10am-cards__item-link:hover {
   background-color: black;
-  color: white;
+  color: white !important;
 }
 
 @media (max-width: 1023px) {
