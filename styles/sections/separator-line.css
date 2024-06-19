@@ -1,4 +1,5 @@
 .separator-line {
+  width: 100%;
   border-bottom: 4px solid black;
   margin: 100px 0 35px;
 }

@@ -1,0 +1,32 @@
+version: '3.2'
+services:
+  web:
+      container_name: 10am_theme_wp
+      image: wordpress
+      links:
+       - mysql
+      environment:
+       - WORDPRESS_DB_NAME=10am_theme
+       - WORDPRESS_DB_USER=root
+       - WORDPRESS_DB_PASSWORD=YgcZPhxBfF69NZrZ7gCD
+      ports:
+       - "8080:80"
+      working_dir: /var/www/html
+      volumes:
+        - type: bind
+          source: ./
+          target: /var/www/html/wp-content/themes/10am_theme
+        - type: bind
+          source: ../TECH/no-conflict-css
+          target: /var/www/html/wp-content/plugins/no-conflict-css
+        - type: bind
+          source: ../TECH/10am-blocks
+          target: /var/www/html/wp-content/plugins/10am-blocks
+  mysql:
+      container_name: 10am_theme_mysql
+      image: mysql:5.7
+      ports:
+       - "3306:3306"
+      environment:
+       - MYSQL_ROOT_PASSWORD=YgcZPhxBfF69NZrZ7gCD
+       - MYSQL_DATABASE=10am_theme

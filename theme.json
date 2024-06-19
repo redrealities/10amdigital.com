@@ -1,0 +1,118 @@
+{
+  "version": 2,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+  "settings": {
+    "layout": {
+      "contentSize": "1024px"
+    },
+    "typography": {
+			"fontFamilies": [
+				{
+					"name": "System",
+					"slug": "system",
+					"fontFamily": "'Roboto', sans-serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "extra-small",
+					"size": "10px",
+					"name": "Extra small"
+				},
+				{
+					"slug": "small",
+					"size": "14px",
+					"name": "Small"
+				},
+				{
+					"slug": "medium",
+					"size": "16px",
+					"name": "Medium"
+				},
+				{
+					"slug": "large",
+					"size": "20px",
+					"name": "Large"
+				},
+				{
+					"slug": "huge",
+					"size": "48px",
+					"name": "Huge"
+				}
+      ]
+    },
+    "color": {
+      "custom": false,
+      "palette": [
+        {
+          "name": "Brand",
+          "slug": "brand",
+          "color": "#D60000"
+        },
+        {
+          "name": "Primary Grey",
+          "slug": "primary-grey",
+          "color": "#231F1E"
+        },
+        {
+          "name": "Light Grey",
+          "slug": "light-grey",
+          "color": "#7a7a7a"
+        }
+      ],
+			"gradients": [
+				{
+					"slug": "primary-red",
+					"gradient": "linear-gradient(180deg, #D50100 0%, #AA0606 100%)",
+					"name": "Brand to darker"
+				}
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontFamily": "var(--wp--preset--font-family--system)"
+    },
+		"elements": {
+			"button": {
+        "border": {
+					"width": "0",
+					"radius": "6px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--brand)",
+					"text": "white"
+				},
+				"typography": {
+					"fontSize": "14px",
+					"fontWeight": "bold"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				}
+			}
+    }
+  },
+  "customTemplates": [
+		{
+			"name": "no-title",
+			"title": "No title",
+			"postTypes": [ "post","page" ]
+		}
+  ],
+  "templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+  ]
+}

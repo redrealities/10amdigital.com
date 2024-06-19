@@ -16,7 +16,8 @@
   color: black;
 }
 
-.page--loaded .section-header {
+.page--loaded .section-header,
+.acf-block-preview .section-header {
   opacity: 1;
   transform: translateY(0);
 }
